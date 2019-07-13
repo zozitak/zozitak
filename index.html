@@ -2,7 +2,7 @@
 <html>
   <script type="text/javascript">
     //http://test.com/?command=function&target=ID
-    function command(){
+    window.onload = function(){
       var control = getAllUrlParams(window.location.href).command
       var target = getAllUrlParams(window.location.href).target
       switch (control) {
