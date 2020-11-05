@@ -12,7 +12,8 @@
 --lvl4: var(--lvl3)+1;
 --lvl5: var(--lvl4)+1;
 --body-background-color:#353535;
---textcolor1:#86B42B;
+--textcolor1:#6f991b;
+--textcolor2:#86B42B;
 
 /*Monokai dimm color palette*/
 --c6:#1e1e1e;
@@ -42,6 +43,7 @@
 --c93:#6A7EC8;
 --c95:#56ADBC;
 --c825:#66D9EF;
+--c123:#6f991b;
 --c91:#86B42B;
 --c99:#A6E22E;
 --c8221:#e2e22e;
@@ -222,7 +224,7 @@ z-index: var(--lvl3);
 width: 70%;
 text-align: left;
 font-size: 16px;
-color:--textcolor1;
+color:var(--textcolor1,#86B42B);
 }
 
 .lefte {
@@ -232,10 +234,11 @@ font-size: 16px;
 background-color: burlywood;
 }
 
-#welcome {
+#welcome.h1 {
 padding-left: 60px;
 width: 400px;
 padding-top: 30px;
+color:var(--textcolor2,#86B42B);
 }
 
 #forest-background {
