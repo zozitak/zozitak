@@ -1,0 +1,68 @@
+.side-menu {
+  display: block;
+  height: 100%; /* 100% Full-height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0px;
+  left: 0px;
+  background-color:rgba(125,125,125,0.5);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  text-align:center;
+}
+
+.side-menu svg {
+  	width: 50%;
+  	heigth: 50%;
+}
+
+.side-menu a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  
+  transition: 0.3s; /* Add transition for hover effects */
+  color: black; /* White text color */
+  font-size: 36px; /* Increased font-size */
+  text-decoration: none;
+  color:black;
+  white-space: nowrap
+}
+
+.side-menu a:hover {
+  background-color: #d7d7d7 ; /* Add a hover color */
+}
+
+.side-menu navtogglebutton{
+	postion: absolute;
+	top: 0px;
+}
+
+.container {
+position: absolute;
+display: inline;
+}
+
+#togglebutton {
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  margin-right: -4.5px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.redcube {
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  margin-right: -4.5px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.bluecube {
+margin-right: -4.5px;
+}
+
