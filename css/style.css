@@ -18,7 +18,7 @@ body {
 position: relative;
 margin: 0; 
 height: 100%; 
-overflow: hidden;
+overflow: scroll;
 background-color: var(--test-body-backgroundcolor,hsla(0,0%,0%,0));
 }
 
