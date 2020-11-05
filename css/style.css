@@ -199,11 +199,12 @@ fill:hsla(120,0%,50%,0.25);
   :root {
   --test-body-backgroundcolor:hsla(120,50%,50%,0.5);
   --side-navigation-bar-fix-width:180px;
-} }
+  } 
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-  
+
  }
 
 /* Large devices (desktops, 992px and up)*/
