@@ -6,19 +6,64 @@
 --side-navigation-bar-fix-width:100vw;
 --navigation-bar-transition:0.7s;
 --navigation-elements-transition:0.3s;
---test-body-backgroundcolor:hsla(0,0%,0%,0);
 --lvl1: 1;
 --lvl2: var(--lvl1)+1;
 --lvl3: var(--lvl2)+1;
 --lvl4: var(--lvl3)+1;
 --lvl5: var(--lvl4)+1;
+--body-background-color:#353535;
+--textcolor1:#86B42B;
+
+/*Monokai dimm color palette*/
+--c6:#1e1e1e;
+--c87:#272727;
+--c10:#303030;
+--c19:#282828;
+--c86:#353535;
+--c31:#404040;
+--c8:#676b7180;
+--c97:#666666;
+--c3:#444444;
+--c2:#4e4e4e;
+--c5:#565656;
+--c82:#505050;
+--c16:#505037;
+--c18:#707057;
+--c1:#707070;
+--c12:#949494;
+
+--c94:#8C6BC8;
+--c8266:#AE81FF;
+--c8235:#819aff;
+--c11:#575b6180;
+--c13:#4747a180;
+--c14:#6767ce80;
+--c83:#3655b5;
+--c93:#6A7EC8;
+--c95:#56ADBC;
+--c825:#66D9EF;
+--c91:#86B42B;
+--c99:#A6E22E;
+--c8221:#e2e22e;
+--c92:#B3B42B;
+--c4:#e58520;
+--c15:#c07020;
+--c89:#C4265E;
+--c98:#f92672;
+
+--c56:#d8d8d8;
+--c7:#c5c8c6;
+--c88:#CCCCCC;
+--c96:#e3e3dd;
+--c8241:#f8f8f2;
+--c84:#ffffff;
 }
 
 body {
 position: relative;
 margin: 0; 
 height: 100%; 
-background-color: var(--test-body-backgroundcolor,hsla(0,0%,0%,0));
+background-color: var(--body-background-color,hsla(0,0%,0%,0));
 
 /* Hide scrollbar for IE, Edge and Firefox */
 -ms-overflow-style: none;  /* IE and Edge */
@@ -58,7 +103,7 @@ fill:var(--navigation-bar-color);
 }
 
 #nav-background {
-position: fixed; /* Stay in place */
+position: absolute; /* Fill up the container with this background (not the most elegant solution) */
 z-index: -1; /* Stay in background */
 fill:var(--navigation-bar-color);
 top: 0;
@@ -172,11 +217,12 @@ background-color: rgb(141, 51, 224);
 }
 
 .contentse {
-background-color:hsla(120,0%,50%,0.35);
+background-color:rgba(128, 128, 128, 0);
 z-index: var(--lvl3);
 width: 70%;
 text-align: left;
 font-size: 16px;
+color:--textcolor1;
 }
 
 .lefte {
@@ -205,7 +251,7 @@ fill:hsla(120,0%,50%,0.25);
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 300px) { 
   :root {
-  --test-body-backgroundcolor:hsla(120,50%,50%,0.5);
+  --test-body-backgroundcolor:rgb(255, 248, 230);
   --side-navigation-bar-fix-width:180px;
   } 
 }
