@@ -12,9 +12,14 @@
 --lvl4: var(--lvl3)+1;
 --lvl5: var(--lvl4)+1;
 --body-background-color:#353535;
---textcolor1:#6f991b;
---textcolor2:#86B42B;
---textcolor3:#949494; 
+--textcolor1:#819aff;
+--textcolor2:#819aff;
+--textcolor3:#949494;
+--projects_color1:#819aff; 
+--portfolio_color1:#e58520;
+--wiki_color1:#f92672;
+--about_me_color1:#A6E22E;
+--contacts_color1:#e2e22e;
 
 /*Monokai dimm color palette*/
 --c6:#1e1e1e;
@@ -145,6 +150,7 @@ color: black; /* White text color */
 font-size: 5vh; /* Increased font-size */
 text-align: center;
 text-decoration: none;
+font-family: monospace;
 color:black;
 white-space: nowrap;
 padding-top: 0.6vh; 
@@ -236,10 +242,42 @@ background-color: burlywood;
 
 #welcome {
 color:var(--textcolor2,#86B42B);
+font-family: monospace;
+}
+
+.W_projects_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--projects_color1,#707070);
+}
+
+.W_portfolio_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--portfolio_color1,#707070);
+}
+
+.W_wiki_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--wiki_color1,#707070);
+}
+
+.W_about_me_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--about_me_color1,#707070);
+}
+
+.W_contacts_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--contacts_color1,#707070);
 }
 
 .contentse > section > p {
-color:var(--textcolor3,#707070);  
+color:var(--textcolor3,#707070);
+font-family: monospace;  
 }
 
 #forest-background {
@@ -256,7 +294,7 @@ fill:hsla(120,0%,50%,0.25);
 @media (min-width: 300px) { 
   :root {
   --test-body-backgroundcolor:rgb(255, 248, 230);
-  --side-navigation-bar-fix-width:180px;
+  --side-navigation-bar-fix-width:200px;
   } 
 }
 
