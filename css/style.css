@@ -14,7 +14,8 @@
 --body-background-color:#353535;
 --textcolor1:#6f991b;
 --textcolor2:#86B42B;
---textcolor3:#949494; 
+--textcolor3:#949494;
+--project_color1:#819aff; 
 
 /*Monokai dimm color palette*/
 --c6:#1e1e1e;
@@ -145,6 +146,7 @@ color: black; /* White text color */
 font-size: 5vh; /* Increased font-size */
 text-align: center;
 text-decoration: none;
+font-family: monospace;
 color:black;
 white-space: nowrap;
 padding-top: 0.6vh; 
@@ -236,10 +238,18 @@ background-color: burlywood;
 
 #welcome {
 color:var(--textcolor2,#86B42B);
+font-family: monospace;
+}
+
+.W_projects_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--project_color1,#707070);
 }
 
 .contentse > section > p {
-color:var(--textcolor3,#707070);  
+color:var(--textcolor3,#707070);
+font-family: monospace;  
 }
 
 #forest-background {
@@ -256,7 +266,7 @@ fill:hsla(120,0%,50%,0.25);
 @media (min-width: 300px) { 
   :root {
   --test-body-backgroundcolor:rgb(255, 248, 230);
-  --side-navigation-bar-fix-width:180px;
+  --side-navigation-bar-fix-width:200px;
   } 
 }
 
