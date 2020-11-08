@@ -13,9 +13,13 @@
 --lvl5: var(--lvl4)+1;
 --body-background-color:#353535;
 --textcolor1:#6f991b;
---textcolor2:#86B42B;
+--textcolor2:#6f991b;
 --textcolor3:#949494;
---project_color1:#819aff; 
+--projects_color1:#819aff; 
+--portfolio_color1:#e58520;
+--wiki_color1:#f92672;
+--about_me_color1:#A6E22E;
+--contacts_color1:#e2e22e;
 
 /*Monokai dimm color palette*/
 --c6:#1e1e1e;
@@ -244,7 +248,31 @@ font-family: monospace;
 .W_projects_link {
   font-family: monospace;
   text-decoration: none;
-  color:var(--project_color1,#707070);
+  color:var(--projects_color1,#707070);
+}
+
+.W_portfolio_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--portfolio_color1,#707070);
+}
+
+.W_wiki_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--wiki_color1,#707070);
+}
+
+.W_about_me_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--about_me_color1,#707070);
+}
+
+.W_contacts_link {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--contacts_color1,#707070);
 }
 
 .contentse > section > p {
