@@ -165,8 +165,28 @@ display:block;
 transition: var(--navigation-elements-transition);
 }
 
+.N_projects_Link:hover {
+color: var(--projects_color1,#819aff);
+}
+
+.N_portfolio_Link:hover {
+color: var(--portfolio_color1,#e58520);
+}
+
+.N_wiki_Link:hover {
+color: var(--wiki_color1,#f92672);
+}
+
+.N_aboutme_Link:hover {
+color: var(--about_me_color1,#A6E22E);
+}
+
+.N_contacts_Link:hover {
+ color: var(--contacts_color1,#e2e22e);
+}
+
 .side-menu a:hover {
-background-color: #d7d7d7 ; /* Add a hover color */
+background-color: #949494 ; /* Add a hover color */
 }
 
 #nav-socicons-wrap {
