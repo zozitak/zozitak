@@ -300,6 +300,12 @@ color:var(--textcolor3,#707070);
 font-family: monospace;  
 }
 
+.contentse > section > a {
+  color:var(--textcolor3,#707070);
+  text-decoration: none;
+  font-family: monospace;  
+  }
+
 #forest-background {
 position:absolute;
 top:0;
