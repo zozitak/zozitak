@@ -300,11 +300,11 @@ color:var(--textcolor3,#707070);
 font-family: monospace;  
 }
 
-.contentse > section > a {
-  color:var(--textcolor3,#707070);
+.W_contacts_links {
+  font-family: monospace;
   text-decoration: none;
-  font-family: monospace;  
-  }
+  color:var(--textcolor3,#707070);
+}
 
 #forest-background {
 position:absolute;
