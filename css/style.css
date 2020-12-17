@@ -20,6 +20,7 @@
 --wiki_color1:#f92672;
 --about_me_color1:#A6E22E;
 --contacts_color1:#e2e22e;
+--link_color1:#d8d8d8;
 
 /*Monokai dimm color palette*/
 --c6:#1e1e1e;
@@ -81,6 +82,12 @@ scrollbar-width: none;  /* Firefox */
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
+}
+
+a {
+  font-family: monospace;
+  text-decoration: none;
+  color:var(--link_color1,#707070);
 }
 
 .side-menu {
