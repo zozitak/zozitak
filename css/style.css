@@ -16,10 +16,10 @@
 --textcolor2:#6f991b;
 --textcolor3:#949494;
 --projects_color1:#819aff;
---portfolio_color1:#e58520;
---wiki_color1:#f92672;
---about_me_color1:#A6E22E;
---contacts_color1:#e2e22e;
+--portfolio_color1:#e2e22e;
+--wiki_color1:#A6E22E;
+--about_me_color1:#e58520;
+--contacts_color1:#f92672;
 --link_color1:#d8d8d8;
 
 /*Monokai dimm color palette*/
@@ -172,23 +172,23 @@ display:block;
 transition: var(--navigation-elements-transition);
 }
 
-.N_projects_Link:hover {
+.N_projects_link:hover {
 color: var(--projects_color1,#819aff);
 }
 
-.N_portfolio_Link:hover {
+.N_job_link:hover {
 color: var(--portfolio_color1,#e58520);
 }
 
-.N_wiki_Link:hover {
+.N_wiki_link:hover {
 color: var(--wiki_color1,#f92672);
 }
 
-.N_aboutme_Link:hover {
+.N_aboutme_link:hover {
 color: var(--about_me_color1,#A6E22E);
 }
 
-.N_contacts_Link:hover {
+.N_contacts_link:hover {
  color: var(--contacts_color1,#e2e22e);
 }
 
@@ -278,7 +278,7 @@ font-family: monospace;
   color:var(--projects_color1,#707070);
 }
 
-.W_portfolio_link {
+.W_job_link {
   font-family: monospace;
   text-decoration: none;
   color:var(--portfolio_color1,#707070);
@@ -304,7 +304,8 @@ font-family: monospace;
 
 .contentse > section > p {
 color:var(--textcolor3,#707070);
-font-family: monospace;  
+font-family: monospace; 
+white-space: nowrap;
 }
 
 .W_contacts_links {
@@ -321,6 +322,10 @@ z-index: -1;
 height: 100vh;
 width: 100vw; 
 fill:hsla(120,0%,50%,0.25);
+}
+
+#google_speaker{
+fill:var(--textcolor3,#707070);
 }
 
 /* Small devices (landscape phones, 576px and up)*/
