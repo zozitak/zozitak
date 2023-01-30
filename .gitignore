@@ -1,0 +1,14 @@
+*
+!index.html
+!aboutme/**
+!contacts/**
+!css/**
+!images/**
+!index.html
+!js/**
+!portfolio/**
+!projects/**
+!README.md
+!wiki/**
+!workspace.code-workspace
+!.gitignore
