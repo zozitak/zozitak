@@ -16,7 +16,7 @@
 --textcolor2:#6f991b;
 --textcolor3:#949494;
 --projects_color1:#819aff;
---portfolio_color1:#e2e22e;
+--job_color1:#e2e22e;
 --wiki_color1:#A6E22E;
 --about_me_color1:#e58520;
 --contacts_color1:#f92672;
@@ -66,6 +66,10 @@
 --c96:#e3e3dd;
 --c8241:#f8f8f2;
 --c84:#ffffff;
+}
+
+html{
+height: 100%;
 }
 
 body {
@@ -177,7 +181,7 @@ color: var(--projects_color1,#819aff);
 }
 
 .N_job_link:hover {
-color: var(--portfolio_color1,#e58520);
+color: var(--job_color1,#e58520);
 }
 
 .N_wiki_link:hover {
@@ -232,7 +236,7 @@ width:30%;
 }
 
 .tope {
-height: 60px;
+height: 5vh;
 margin: 0px;
 }
 
@@ -267,8 +271,32 @@ font-size: 16px;
 background-color: burlywood;
 }
 
+.footer{
+font-size: 16px;
+width: 100%;
+text-align: center;
+position: absolute;
+bottom: 5vh;
+}
+
+.foote > section > p {
+color:var(--textcolor3,#707070);
+font-family: monospace; 
+white-space: nowrap;
+}
+
 #welcome {
-color:var(--textcolor2,#86B42B);
+color:var(--textcolor1,#86B42B);
+font-family: monospace;
+}
+
+#homepage_intro_text{
+color:var(--textcolor3,#86B42B);
+font-family: monospace;
+}
+
+#homapage_contents_text{
+color:var(--textcolor3,#86B42B);
 font-family: monospace;
 }
 
@@ -281,7 +309,7 @@ font-family: monospace;
 .W_job_link {
   font-family: monospace;
   text-decoration: none;
-  color:var(--portfolio_color1,#707070);
+  color:var(--job_color1,#707070);
 }
 
 .W_wiki_link {
