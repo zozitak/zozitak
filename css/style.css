@@ -11,7 +11,7 @@
 --lvl3: var(--lvl2)+1;
 --lvl4: var(--lvl3)+1;
 --lvl5: var(--lvl4)+1;
---body-background-color:#353535;
+--body-background-color:#6f991b; /*#353535;*/
 --textcolor1:#6f991b;
 --textcolor2:#6f991b;
 --textcolor3:#949494;
