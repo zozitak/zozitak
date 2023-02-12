@@ -29,14 +29,14 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="banner mt-3 pb-2">
+    <header class="sticky-top">
+      <div class="banner">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12 col-md-6 float-start">
-              <a href="/"
+              <a class="N_link" href="/"
                 ><div>
-                  <div class="d-inline pt-1">
+                  <div class="d-inline">
                     <i class="d-inline fa fa-at fa-2x" aria-hidden="true"></i>
                   </div>
                   <div class="d-inline">
@@ -45,37 +45,37 @@
                 </div></a
               >
             </div>
-            <div class="col-6 text-right d-none d-lg-block d-xl-block">
+            <div class="col-6 text-right d-none d-md-block d-lg-block d-xl-block">
               <div class="d-inline">
                 <p class="d-inline h1">&#160;</p>
               </div>
-              <a href="/projects"
+              <a class="N_link" href="/projects"
                 ><div class="d-inline px-1">
                   <i class="fa fa-terminal fa-2x" aria-hidden="true"></i></div
               ></a>
-              <a href="/wiki"
+              <a class="N_link" href="/wiki"
                 ><div class="d-inline px-1">
                   <i class="fa fa-book fa-2x" aria-hidden="true"></i></div
               ></a>
-              <a href="/job"
+              <a class="N_link" href="/job"
                 ><div class="d-inline px-1">
                   <i class="fa fa-file-text fa-2x" aria-hidden="true"></i></div
               ></a>
-              <a href="/aboutme"
+              <a class="N_link" href="/aboutme"
                 ><div class="d-inline px-1">
                   <i
                     class="fa fa-user-circle fa-2x"
                     aria-hidden="true"
                   ></i></div
               ></a>
-              <a href="/contacts"
+              <a class="N_link" href="/contacts"
                 ><div class="d-inline px-1">
                   <i
                     class="d-inline fa fa-address-card fa-2x"
                     aria-hidden="true"
                   ></i></div
               ></a>
-              <a href="/search"
+              <a class="N_link" href="/search"
                 ><div class="d-inline px-1">
                   <i
                     class="d-inline fa fa-search fa-2x"
@@ -86,36 +86,36 @@
           </div>
         </div>
         <div
-          class="container-fluid mt-2 d-xs-block d-sm-block d-md-block d-lg-none d-xl-none"
+          class="container-fluid mt-1 d-xs-block d-sm-block d-md-none d-lg-none d-xl-none"
         >
           <div class="row text-center">
             <div class="col-2">
-              <a href="/projects">
+              <a class="N_link" href="/projects">
                 <i class="fa fa-terminal fa-2x" aria-hidden="true"></i>
               </a>
             </div>
             <div class="col-2">
-              <a href="/wiki">
+              <a class="N_link" href="/wiki">
                 <i class="fa fa-book fa-2x" aria-hidden="true"></i>
               </a>
             </div>
             <div class="col-2">
-              <a href="/job">
+              <a class="N_link" href="/job">
                 <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
               </a>
             </div>
             <div class="col-2">
-              <a href="/aboutme">
+              <a class="N_link" href="/aboutme">
                 <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
               </a>
             </div>
             <div class="col-2">
-              <a href="/contacts">
+              <a class="N_link" href="/contacts">
                 <i class="fa fa-address-card fa-2x" aria-hidden="true"></i>
               </a>
             </div>
             <div class="col-2">
-              <a href="/search">
+              <a class="N_link" href="/search">
                 <i class="fa fa-search fa-2x" aria-hidden="true"></i>
               </a>
             </div>
@@ -123,7 +123,34 @@
         </div>
       </div>
     </header>
-
+    <main id="homepage">
+      <div class="container-fluid my-4 mx-1">
+        <div class="row">
+          <div class="col">
+            <section>
+              <h1 id="welcome">About Me</h1>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="fixed-bottom mb-3">
+      <div class="container-flex d-none d-lg-block d-xl-block text-center">
+        <div class="row">
+          <div class="col">
+            <h3 id="homepage_intro_text">Navigation</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              <kbd>h</kbd>-Home <kbd>a</kbd>-About me <kbd>c</kbd>-Contacts
+              <kbd>j</kbd>-Job <kbd>p</kbd>-Projects <kbd>w</kbd>-Wiki
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="/js/index.js"></script>
   </body>
 </html>
