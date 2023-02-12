@@ -215,3 +215,7 @@ footer {
     padding-bottom: 4px;
   }
 }
+
+.btn:focus{
+    outline: none;
+}

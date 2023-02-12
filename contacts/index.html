@@ -127,70 +127,161 @@
     </header>
     <main id="homepage">
       <div class="container-fluid my-4 mx-1">
-        <div class="row">
-          <div class="col">
-            <section>
-              <h1 class="W_contacts_link">Contacts</h1>
-              <div>
-                <div style="height: 5vh; width: 5vh">
-                  <a
-                    onclick="window.location.href = '/contacts/contacts_qr.html';"
+        <div class="row d-flex justify-content-center">
+          <div class="col text-center">
+            <figure>
+              <svg id="graph" width="296px" height="296px">
+                <!-- pattern -->
+                <defs>
+                  <pattern
+                    id="image"
+                    x="0%"
+                    y="0%"
+                    height="100%"
+                    width="100%"
+                    viewBox="200 0 1944 1944"
                   >
-                    <img src="/contacts/images/qr_link_contacts.svg" />
-                  </a>
+                    <image
+                      x="0%"
+                      y="0%"
+                      width="2592"
+                      height="1944"
+                      xlink:href="/images/profile_pic.jpg"
+                    ></image>
+                  </pattern>
+                </defs>
+
+               <circle
+                  id="sd"
+                  cx="50%"
+                  cy="50%"
+                  r="50%"
+                  fill="url(#image)"
+		  />
+              </svg>
+              <figcaption class="h2 pt-2">Takács Zoltán Gábor</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row row-cols-3 g-1 d-flex justify-content-center">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://github.com/zozitak?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Github
                 </div>
-                <div style="height: 5vh; width: 5vh">
-                  <a
-                    href="https://discordapp.com/users/368107580498771978/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="/contacts/images/discord_logo.svg" />
-                  </a>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="mailto:zozitak@gmail.com"
+		onclick="this.blur();"
+              >
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  E-mail
                 </div>
-                <div style="height: 5vh; width: 5vh">
-                  <a
-                    href="https://www.facebook.com/zozitak/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="/contacts/images/facebook_logo.svg" />
-                  </a>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://discordapp.com/users/368107580498771978/"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-discord fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Discord
                 </div>
-                <div style="height: 5vh; width: 5vh">
-                  <a
-                    href="https://github.com/zozitak?tab=repositories"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="/contacts/images/github_logo.svg" />
-                  </a>
+              </a>
+            </div>
+          </div>
+          <div class="row row-cols-3 pt-1 g-1 d-flex justify-content-center">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://www.facebook.com/zozitak/"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Facebook
                 </div>
-                <div style="height: 5vh; width: 5vh">
-                  <a href="mailto:zozitak@gmail.com">
-                    <img src="/contacts/images/gmail_logo.svg" />
-                  </a>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://www.instagram.com/takacszoltangabor/"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Instagram
                 </div>
-                <div style="height: 5vh; width: 5vh">
-                  <a
-                    href="https://www.instagram.com/takacszoltangabor/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="/contacts/images/instagram_logo.svg" />
-                  </a>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://www.youtube.com/@zolitakacs6306/playlists"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-youtube fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Youtube
                 </div>
-                <div style="height: 5vh; width: 5vh">
-                  <a
-                    href="https://github.com/zozitak?tab=repositories"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="/contacts/images/youtube_logo.svg" />
-                  </a>
+              </a>
+            </div>
+          </div>
+          <div class="row row-cols-3 pt-1 g-1 d-flex justify-content-center">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                onclick="window.location.href = '/contacts/contacts_qr.html';this.blur();"
+              >
+                <i class="fa-solid fa-qrcode fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Contacts
                 </div>
-              </div>
-            </section>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                onclick="this.blur();"
+		href="/contacts/vcard.vcf"
+		download
+              >
+                <i class="fa-solid fa-address-card fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">VCard</div>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+		onclick="this.blur();"
+              >
+                <i class="fa-solid fa-phone fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">Phone</div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
