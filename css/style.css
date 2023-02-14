@@ -179,6 +179,13 @@ footer {
   color: var(--link_color1, #707070);
 }
 
+.project_card_text,
+.project_card_text:hover {
+  font-family: monospace;
+  text-decoration: none;
+  color: var(--textcolor3, #707070);
+}
+
 #google_speaker {
   fill: var(--textcolor3, #707070);
 }
