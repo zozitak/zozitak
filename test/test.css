@@ -1,0 +1,39 @@
+.card {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  border-radius: 12px;
+  width: 400px;
+  height: 300px;
+}
+
+.card > figure {
+  position: relative;
+  border-radius: 12px;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+
+.card > figure > img {
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+}
+
+.card > figure > figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #666666;
+  padding: 0em 3em;
+  border-radius: 12px;
+  transition: 0.45s ease-in-out;
+}
+
+.card > figure > figcaption:hover {
+  opacity: 0.95;
+}

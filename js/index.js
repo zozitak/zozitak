@@ -39,4 +39,7 @@ document.body.addEventListener("keydown", function (event) {
 	if (event.key === "w") {
         	window.location.assign("/wiki");
     	}
+	if (event.key === "t") {
+        	window.location.assign("/test");
+    	}
 });
