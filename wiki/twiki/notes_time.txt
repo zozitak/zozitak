@@ -1,0 +1,1 @@
+document.getElementsByClassName("tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fsave-wiki")[0].click()
