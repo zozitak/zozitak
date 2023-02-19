@@ -273,3 +273,19 @@ footer {
 .portfolio-card > figure > figcaption:hover {
   opacity: 0.95;
 }
+
+.styled-scrollbars {
+  /* Foreground, Background */
+  scrollbar-color: #c5c8c5 #353535;
+}
+.styled-scrollbars::-webkit-scrollbar {
+  width: 6px; /* Mostly for vertical scrollbars */
+  height: 6px; /* Mostly for horizontal scrollbars */
+}
+.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+  border-radius: 6px;
+  background: #c5c8c5;
+}
+.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+  background: #353535;
+}

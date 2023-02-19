@@ -57,15 +57,16 @@
 
 .styled-scrollbars {
   /* Foreground, Background */
-  scrollbar-color: red blue;
+  scrollbar-color: #c5c8c5 #353535;
 }
 .styled-scrollbars::-webkit-scrollbar {
-  width: 10px; /* Mostly for vertical scrollbars */
-  height: 10px; /* Mostly for horizontal scrollbars */
+  width: 6px; /* Mostly for vertical scrollbars */
+  height: 6px; /* Mostly for horizontal scrollbars */
 }
 .styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
-  background: red;
+  border-radius: 6px;
+  background: #c5c8c5;
 }
 .styled-scrollbars::-webkit-scrollbar-track { /* Background */
-  background: blue;
+  background: #353535;
 }
