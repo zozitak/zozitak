@@ -1,0 +1,275 @@
+/* Create it to moblie and than scale up, add grafics, photos etc. */
+
+:root {
+  --navigation-bar-color: hsla(0, 0%, 50%, 0.5);
+  --side-navigation-bar-width: 0vw;
+  --side-navigation-bar-fix-width: 100vw;
+  --navigation-bar-transition: 0.7s;
+  --navigation-elements-transition: 0.3s;
+  --lvl1: 1;
+  --lvl2: var(--lvl1) + 1;
+  --lvl3: var(--lvl2) + 1;
+  --lvl4: var(--lvl3) + 1;
+  --lvl5: var(--lvl4) + 1;
+  --body-background-color: #353535;
+  --textcolor1: #a6e22e;
+  --textcolor2: #6f991b;
+  --textcolor3: #c5c8c5;
+  --projects_color1: #819aff;
+  --job_color1: #e2e22e;
+  --header_color1: #c5c8c5;
+  --wiki_color1: #a6e22e;
+  --about_me_color1: #e58520;
+  --contacts_color1: #f92672;
+  --link_color1: #d8d8d8;
+
+  /*Monokai dimm color palette*/
+  --c6: #1e1e1e;
+  --c87: #272727;
+  --c10: #303030;
+  --c19: #282828;
+  --c86: #353535;
+  --c31: #404040;
+  --c8: #676b7180;
+  --c97: #666666;
+  --c3: #444444;
+  --c2: #4e4e4e;
+  --c5: #565656;
+  --c82: #505050;
+  --c16: #505037;
+  --c18: #707057;
+  --c1: #707070;
+  --c12: #949494;
+
+  --c94: #8c6bc8;
+  --c8266: #ae81ff;
+  --c8235: #819aff;
+  --c11: #575b6180;
+  --c13: #4747a180;
+  --c14: #6767ce80;
+  --c83: #3655b5;
+  --c93: #6a7ec8;
+  --c95: #56adbc;
+  --c825: #66d9ef;
+  --c123: #6f991b;
+  --c91: #86b42b;
+  --c99: #a6e22e;
+  --c8221: #e2e22e;
+  --c92: #b3b42b;
+  --c4: #e58520;
+  --c15: #c07020;
+  --c89: #c4265e;
+  --c98: #f92672;
+
+  --c56: #d8d8d8;
+  --c7: #c5c8c6;
+  --c88: #cccccc;
+  --c96: #e3e3dd;
+  --c8241: #f8f8f2;
+  --c84: #ffffff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  background-color: var(--body-background-color, hsla(0, 0%, 0%, 0));
+}
+
+a {
+  font-family: monospace;
+  text-decoration: none;
+  color: var(--link_color1, #707070);
+}
+
+a:hover {
+  text-decoration: none;
+  color: none;
+}
+
+header {
+  background-color: var(--body-background-color, hsla(0, 0%, 0%, 0));
+  border-bottom-color: var(--header_color1, #c5c8c5);
+  border-bottom-width: 1;
+  border-bottom-style: solid;
+}
+
+main#homepage {
+  color: var(--textcolor3, #707070);
+}
+
+footer {
+  color: var(--textcolor3, #707070);
+}
+
+#welcome {
+  color: var(--textcolor1, #a6e22e);
+  font-family: monospace;
+}
+
+#homepage_intro_text {
+  color: var(--textcolor3, #86b42b);
+  font-family: monospace;
+}
+
+.N_link,
+.N_link:hover {
+  text-decoration: none;
+  color: var(--header_color1, #c5c8c5);
+}
+
+.W_projects_link,
+.W_projects_link:hover {
+  font-family: monospace;
+  text-decoration: none;
+  color: var(--projects_color1, #707070);
+}
+
+.W_job_link,
+.W_job_link:hover {
+  font-family: monospace;
+  text-decoration: none;
+  color: var(--job_color1, #707070);
+}
+
+.W_wiki_link,
+.W_wiki_link:hover {
+  font-family: monospace;
+  text-decoration: none;
+  color: var(--wiki_color1, #707070);
+}
+
+.W_about_me_link,
+.W_about_me_link:hover {
+  font-family: monospace;
+  text-decoration: none;
+  color: var(--about_me_color1, #707070);
+}
+
+.W_contacts_link,
+.W_contacts_link:hover {
+  font-family: monospace;
+  text-decoration: none;
+  color: var(--contacts_color1, #707070);
+}
+
+/*.contentse > section > p {
+  color: var(--textcolor3, #707070);
+  font-family: monospace;
+  white-space: nowrap;
+}*/
+
+.W_contacts_links,
+.W_contacts_links:hover {
+  font-family: monospace;
+  text-decoration: none;
+  color: var(--link_color1, #707070);
+}
+
+.project_card_text,
+.project_card_text:hover {
+  font-family: monospace;
+  text-decoration: none;
+  color: var(--textcolor3, #707070);
+}
+
+#google_speaker {
+  fill: var(--textcolor3, #707070);
+}
+
+@media (max-width: 575.98px) {
+  header {
+    padding-top: 7px;
+    padding-bottom: 4px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    padding-top: 7px;
+    padding-bottom: 4px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    padding-top: 7px;
+    padding-bottom: 4px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header {
+    padding-bottom: 4px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding-bottom: 4px;
+  }
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.portfolio-card {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-card > figure {
+  position: relative;
+  border-radius: 12px;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+
+.portfolio-card > figure > img {
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-card > figure > figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #666666;
+  padding: 0em 1em;
+  border-radius: 12px;
+  transition: 0.45s ease-in-out;
+}
+
+.portfolio-card > figure > figcaption > .leftlink {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  width: 45%;
+  display: inline;
+}
+
+.portfolio-card > figure > figcaption > .rightlink {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 45%;
+  display: inline;
+}
+
+.portfolio-card > figure > figcaption:hover {
+  opacity: 0.95;
+}

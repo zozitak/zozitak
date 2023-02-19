@@ -54,3 +54,18 @@
 .card > figure > figcaption:hover {
   opacity: 0.95;
 }
+
+.styled-scrollbars {
+  /* Foreground, Background */
+  scrollbar-color: red blue;
+}
+.styled-scrollbars::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+  background: red;
+}
+.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+  background: blue;
+}
