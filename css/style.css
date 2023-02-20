@@ -298,3 +298,18 @@ footer {
 .styled-scrollbars::-webkit-scrollbar-track { /* Background */
   background: #353535;
 }
+
+/* Fade-In Effect */
+.visible {
+  /*visibility: visible;*/
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out;
+}
+
+/* Fade-Out Effect */
+.hidden {
+  /*visibility: hidden;*/
+  opacity: 0;
+  /*transition: visibility 0s 2s, opacity 0.9s ease-in-out;*/
+  transition: opacity 0.9s ease-in-out;
+}
