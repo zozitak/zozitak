@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/contacts/share.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -78,7 +79,12 @@
                     aria-hidden="true"
                   ></i></div
               ></a>
-              <a class="N_link" href="https://www.google.com/search?q=site%3Azozitak.github.io" rel=”noopener noreferrer” target="_blank"
+              <a
+                class="N_link"
+                href="https://www.google.com/search?q=site%3Azozitak.github.io"
+                rel="”noopener"
+                noreferrer”
+                target="_blank"
                 ><div class="d-inline px-1">
                   <i
                     class="d-inline fa fa-search fa-2x"
@@ -118,7 +124,12 @@
               </a>
             </div>
             <div class="col-2">
-              <a class="N_link" href="https://www.google.com/search?q=site%3Azozitak.github.io" rel=”noopener noreferrer” target="_blank">
+              <a
+                class="N_link"
+                href="https://www.google.com/search?q=site%3Azozitak.github.io"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <i class="fa fa-search fa-2x" aria-hidden="true"></i>
               </a>
             </div>
@@ -152,13 +163,7 @@
                   </pattern>
                 </defs>
 
-               <circle
-                  id="sd"
-                  cx="50%"
-                  cy="50%"
-                  r="50%"
-                  fill="url(#image)"
-		  />
+                <circle id="sd" cx="50%" cy="50%" r="50%" fill="url(#image)" />
               </svg>
               <figcaption class="h2 pt-2">Takács Zoltán Gábor</figcaption>
             </figure>
@@ -172,7 +177,7 @@
                 href="https://github.com/zozitak?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
-		onclick="this.blur();"
+                onclick="this.blur();"
               >
                 <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
                 <div class="d-none d-md-block d-lg-block d-xl-block">
@@ -184,7 +189,7 @@
               <a
                 class="btn btn-secondary btn-lg btn-block"
                 href="mailto:takacszoltangabor97@gmail.com"
-		onclick="this.blur();"
+                onclick="this.blur();"
               >
                 <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                 <div class="d-none d-md-block d-lg-block d-xl-block">
@@ -198,7 +203,7 @@
                 href="https://discordapp.com/users/368107580498771978/"
                 target="_blank"
                 rel="noopener noreferrer"
-		onclick="this.blur();"
+                onclick="this.blur();"
               >
                 <i class="fa-brands fa-discord fa-2x"></i>
                 <div class="d-none d-md-block d-lg-block d-xl-block">
@@ -214,7 +219,7 @@
                 href="https://www.facebook.com/zozitak/"
                 target="_blank"
                 rel="noopener noreferrer"
-		onclick="this.blur();"
+                onclick="this.blur();"
               >
                 <i class="fa-brands fa-facebook fa-2x"></i>
                 <div class="d-none d-md-block d-lg-block d-xl-block">
@@ -228,7 +233,7 @@
                 href="https://www.instagram.com/takacszoltangabor/"
                 target="_blank"
                 rel="noopener noreferrer"
-		onclick="this.blur();"
+                onclick="this.blur();"
               >
                 <i class="fa-brands fa-instagram fa-2x"></i>
                 <div class="d-none d-md-block d-lg-block d-xl-block">
@@ -242,7 +247,7 @@
                 href="https://www.youtube.com/@zolitakacs6306/playlists"
                 target="_blank"
                 rel="noopener noreferrer"
-		onclick="this.blur();"
+                onclick="this.blur();"
               >
                 <i class="fa-brands fa-youtube fa-2x"></i>
                 <div class="d-none d-md-block d-lg-block d-xl-block">
@@ -267,8 +272,8 @@
               <a
                 class="btn btn-secondary btn-lg btn-block"
                 onclick="this.blur();"
-		href="/contacts/vcard.vcf"
-		download
+                href="/contacts/vcard.vcf"
+                download
               >
                 <i class="fa-solid fa-address-card fa-2x"></i>
                 <div class="d-none d-md-block d-lg-block d-xl-block">VCard</div>
@@ -277,14 +282,56 @@
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
               <a
                 class="btn btn-secondary btn-lg btn-block"
-		onclick="this.blur();"
+                id="share-button"
+                onclick="this.blur();"
               >
-              <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>  
-	      <!-- <i class="fa-solid fa-share-nodes fa-2x"></i> -->
+                <!-- <i class="fa-solid fa-screwdriver-wrench fa-2x"></i> -->
+                <i class="fa-solid fa-share-nodes fa-2x"></i>
                 <div class="d-none d-md-block d-lg-block d-xl-block">Share</div>
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="share-dialog" id="share-dialog">
+        <div class="row text-center">
+          <div class="col-6 text-left">
+            <div class="share-dialog-header h2">Share Contacts</div>
+          </div>
+          <div class="col-6 text-right">
+            <div class="d-inline">
+              <p class="d-inline h2">&#160;</p>
+            </div>
+            <div class="d-inline px-1">
+              <a class="close-button N_link" id="close-button">
+                <i class="fa-solid fa-close fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+          <form>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                value="https://zozitak.github.io/contacts/"
+                placeholder="Contacts"
+                id="copy-input"
+              />
+              <button
+                class="btn btn-secondary"
+                type="button"
+                id="copy-button"
+                data-toggle="tooltip"
+                data-placement="button"
+                title="Copy to Clipboard"
+              >
+                Copy
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
@@ -306,5 +353,6 @@
       </div>
     </footer>
     <script src="/js/index.js"></script>
+    <script src="/contacts/share.js"></script>
   </body>
 </html>

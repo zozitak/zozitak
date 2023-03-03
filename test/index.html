@@ -13,8 +13,7 @@
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="test_style.css" />
-    <link rel="stylesheet" type="text/css" href="test.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -128,134 +127,162 @@
       </div>
     </header>
     <main id="homepage">
-      <div class="container-fluid my-4 d-flex justify-content-center">
-        <div class="row">
-          <div class="col-xl-4 col-12 mb-1">
-            <div class="portfolio-card">
-              <figure>
-                <img src="https://picsum.photos/seed/1/480/270" alt="" />
-                <figcaption>
-                  <div class="row">
-                    <div class="col mt-2">
-                      <h2>Lorem Ipsum</h2>
-                      <p>Lorem ipsum dolor sit amet, sed diam voluptua.</p>
-                      <p>Stack backend frontend devops</p>
-                    </div>
-                  </div>
-                  <div class="leftlink">
-                    <a
-                      class="btn btn-secondary btn-lg btn-block"
-                      href="#"
-                      onclick="this.blur();"
-                      >??????
-                    </a>
-                  </div>
+      <div class="container-fluid my-4">
+        <div class="row d-flex justify-content-center">
+          <div class="col text-center">
+            <figure>
+              <svg id="graph" width="296px" height="296px">
+                <!-- pattern -->
+                <defs>
+                  <pattern
+                    id="image"
+                    x="0%"
+                    y="0%"
+                    height="100%"
+                    width="100%"
+                    viewBox="200 0 1944 1944"
+                  >
+                    <image
+                      x="0%"
+                      y="0%"
+                      width="2592"
+                      height="1944"
+                      xlink:href="/images/profile_pic.jpg"
+                    ></image>
+                  </pattern>
+                </defs>
 
-                  <div class="rightlink">
-                    <a
-                      class="btn btn-secondary btn-lg btn-block"
-                      href="#"
-                      onclick="this.blur();"
-                      >Github
-                    </a>
-                  </div>
-                </figcaption>
-              </figure>
+               <circle
+                  id="sd"
+                  cx="50%"
+                  cy="50%"
+                  r="50%"
+                  fill="url(#image)"
+		  />
+              </svg>
+              <figcaption class="h2 pt-2">Test</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row row-cols-3 g-1 d-flex justify-content-center">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://github.com/zozitak?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Github
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="mailto:takacszoltangabor97@gmail.com"
+		onclick="this.blur();"
+              >
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  E-mail
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://discordapp.com/users/368107580498771978/"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-discord fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Discord
+                </div>
+              </a>
             </div>
           </div>
-          <div class="col-xl-4 my-1">
-            <div class="portfolio-card">
-              <figure>
-                <img src="https://picsum.photos/seed/2/480/270" alt="" />
-                <figcaption>
-                  <div class="row">
-                    <div class="col mt-2">
-                      <h2>Lorem Ipsum</h2>
-                      <p>Lorem ipsum dolor sit amet, sed diam voluptua.</p>
-                      <p>Stack backend frontend style devops</p>
-                    </div>
-                  </div>
-                  <div class="leftlink">
-                    <a
-                      class="btn btn-secondary btn-lg btn-block"
-                      href="#"
-                      onclick="this.blur();"
-                      >??????
-                    </a>
-                  </div>
-
-                  <div class="rightlink">
-                    <a
-                      class="btn btn-secondary btn-lg btn-block"
-                      href="#"
-                      onclick="this.blur();"
-                      >Github
-                    </a>
-                  </div>
-                </figcaption>
-              </figure>
+          <div class="row row-cols-3 pt-1 g-1 d-flex justify-content-center">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://www.facebook.com/zozitak/"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Facebook
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://www.instagram.com/takacszoltangabor/"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Instagram
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                href="https://www.youtube.com/@zolitakacs6306/playlists"
+                target="_blank"
+                rel="noopener noreferrer"
+		onclick="this.blur();"
+              >
+                <i class="fa-brands fa-youtube fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Youtube
+                </div>
+              </a>
             </div>
           </div>
-          <div class="col-xl-4 my-1">
-            <div class="portfolio-card">
-              <figure>
-                <img src="https://picsum.photos/seed/3/480/270" alt="" />
-                <figcaption>
-                  <div class="row">
-                    <div class="col mt-2">
-                      <h2>Lorem Ipsum</h2>
-                      <p>Lorem ipsum dolor sit amet, sed diam voluptua.</p>
-                      <p>Stack backend frontend style devops</p>
-                    </div>
-                  </div>
-                  <div class="leftlink">
-                    <a
-                      class="btn btn-secondary btn-lg btn-block"
-                      href="#"
-                      onclick="this.blur();"
-                      >??????
-                    </a>
-                  </div>
-
-                  <div class="rightlink">
-                    <a
-                      class="btn btn-secondary btn-lg btn-block"
-                      href="#"
-                      onclick="this.blur();"
-                      >Github
-                    </a>
-                  </div>
-                </figcaption>
-              </figure>
+          <div class="row row-cols-3 pt-1 g-1 d-flex justify-content-center">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                onclick="window.location.href = '/contacts/contacts_qr.html';this.blur();"
+              >
+                <i class="fa-solid fa-qrcode fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                  Contacts
+                </div>
+              </a>
             </div>
-          </div>
-          <div class="col-xl-4 my-1">
-            <div class="portfolio-card">
-              <figure>
-                <img src="https://picsum.photos/seed/4/480/270" alt="" />
-                <figcaption>
-                  <h2>Lorem Ipsum</h2>
-                  <p>Lorem ipsum dolor sit amet, sed diam voluptua.</p>
-                  <p>Stack backend frontend style devops</p>
-                  <div class="leftlink">
-                    <a
-                      class="btn btn-secondary btn-lg btn-block"
-                      href="#"
-                      onclick="this.blur();"
-                      >??????
-                    </a>
-                  </div>
-
-                  <div class="rightlink">
-                    <a
-                      class="btn btn-secondary btn-lg btn-block"
-                      href="#"
-                      onclick="this.blur();"
-                      >Github
-                    </a>
-                  </div>
-                </figcaption>
-              </figure>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+                onclick="this.blur();"
+		href="/contacts/vcard.vcf"
+		download
+              >
+                <i class="fa-solid fa-address-card fa-2x"></i>
+                <div class="d-none d-md-block d-lg-block d-xl-block">VCard</div>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+              <a
+                class="btn btn-secondary btn-lg btn-block"
+		onclick="this.blur();"
+              >
+              <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>  
+	      <!-- <i class="fa-solid fa-share-nodes fa-2x"></i> -->
+                <div class="d-none d-md-block d-lg-block d-xl-block">Share</div>
+              </a>
             </div>
           </div>
         </div>
