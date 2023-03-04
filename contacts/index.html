@@ -296,7 +296,7 @@
       <div class="share-dialog" id="share-dialog">
         <div class="row text-center">
           <div class="col-6 text-left">
-            <div class="share-dialog-header h2">Share Contacts</div>
+            <div class="share-dialog-header h2">Share</div>
           </div>
           <div class="col-6 text-right">
             <div class="d-inline">
@@ -328,7 +328,11 @@
                 data-placement="button"
                 title="Copy to Clipboard"
               >
-                Copy
+                Copy<span
+                  id="copy-tooltip"
+                  aria-live="assertive"
+                  role="tooltip"
+                ></span>
               </button>
             </div>
           </form>
