@@ -22,6 +22,12 @@
   z-index: 2;
 }
 
+.S_link,
+.S_link:hover {
+  text-decoration: none;
+  color: #6c757d;
+}
+
 #close-button {
   cursor: pointer;
 }
