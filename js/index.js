@@ -22,7 +22,7 @@ document.body.addEventListener("keydown", function (event) {
   }
 });
 
-const footer = document.querySelector("footer");
+const footer = document.querySelector("footer:not(footer.blockquote-footer)");
 var mouseinfooter = false;
 
 footer.addEventListener("mouseenter", enterListener);
