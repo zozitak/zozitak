@@ -5,3 +5,4 @@ AI project
 Weather Forecast
 Vizualized IT concepts
 Restaurant Webshop
+Social networking app
