@@ -9,7 +9,7 @@ document.body.addEventListener("keydown", function (event) {
     window.location.assign("/contacts");
   }
   if (event.key === "j") {
-    window.location.assign("/job");
+    window.location.assign("/portfolio");
   }
   if (event.key === "p") {
     window.location.assign("/projects");
