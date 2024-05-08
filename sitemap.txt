@@ -1,6 +1,6 @@
 https://zozitak.github.io/index.html
 https://zozitak.github.io/aboutme/index.html
 https://zozitak.github.io/contacts/index.html
-https://zozitak.github.io/job/index.html
+https://zozitak.github.io/portfolio/index.html
 https://zozitak.github.io/projects/index.html
 https://zozitak.github.io/wiki/index.html
