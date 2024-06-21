@@ -279,6 +279,14 @@ footer {
   display: inline;
 }
 
+.portfolio-card > figure > figcaption > .buttonlink {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: calc(100% - 32px);
+  display: inline;
+}
+
 .portfolio-card > figure > figcaption:hover {
   opacity: 0.95;
 }
