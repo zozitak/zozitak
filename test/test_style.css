@@ -71,13 +71,62 @@
 
 html {
   height: 100%;
+  background-image: url('https://fastly.picsum.photos/id/566/2517/1667.jpg?hmac=A_qvcmTIcF4MLh_XTi6ovrhNqEP_udvuCzwLSWK5Ip0');
+  /* Set a specified height, or the minimum height for the background image */
+  min-height: 500px;
+
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+
+  /* Center the background image */
+  background-position: center;
+
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
 }
 
 body {
   position: relative;
-  margin: 0;
   height: 100%;
-  background-color: var(--body-background-color, hsla(0, 0%, 0%, 0));
+  /*background-color: var(--body-background-color, hsla(0, 0%, 0%, 0));*/
+  background-color: transparent;
+}
+
+:root {
+  --shadow: var(--textcolor2);
+  --scrollbarBG: var(--header_color1);
+  --thumbBG: var(--textcolor1);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--thumbBG);
+  box-shadow: 0 -100vh 0 95vh var(--shadow);
+}
+
+/* Fade-In Effect */
+.visible {
+  /*visibility: visible;*/
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out;
+}
+
+/* Fade-Out Effect */
+.hidden {
+  /*visibility: hidden;*/
+  opacity: 0;
+  /*transition: visibility 0s 2s, opacity 0.9s ease-in-out;*/
+  transition: opacity 0.9s ease-in-out;
 }
 
 a {
@@ -99,7 +148,29 @@ header {
 }
 
 main#homepage {
-  color: var(--textcolor3, #707070);
+  margin: 6vh 6vw auto 6vw;
+  color: var(--c8241, #707070);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  border: 2px solid rgba(251, 251, 251, 0.2);
+  background: transparent;
+}
+
+#profile_pic {
+  border-radius: 12px;
+  border: 2px solid rgba(251, 251, 251, 0.2);
+  width: 160px;
+  height: 160px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  background-image: url('https://lh3.googleusercontent.com/fife/ALs6j_FtIemFK1nsn9EetmkOYMu2yVvb0jwOyw0BYTpcwQFzYllpPt2IecstRiaKx8AOzE8cZxSFmkNvK4SwdZaXOjYcACSmftrrMFGF1IQnXR0a8Wamo1EUCgTC4Dx4OUlKe89uNRJCXPd9rz2dO_xZ8qOh6R7Y1aiPEPf7sIrCCwsrM8_8mZXuWPHfzVFfn6JZM7v3oXAuJkFQrh8H9GOqcB3Ka7eSGcZ2yYjdwaFyOPcS1rirw_8-Xxg0SwrNeVclJWK8pHNQLZZzCjguKRIbiVWqOjhoNizPQ1uOnKa3fMZYyy518bGMiRLdkyIoQ1qB4yJj7tYrE3PoeNTZsvcW5TWIbcPsQaCjJrwNDD5JccAb3Ydxh7YJt4bW8svcDwKL0pPIZVHSrQZROXhpyvQo-hf4csN4gJQ2fdjICQFkFyjudlrQ8vtNnMEc1rTejom8zXqQyFJotEcC8XxdLbSixsFg9wj8jqIDYtz1IyHj4ui_-vJMfF6LpqQsZEx5_yKNUdAiFLYpLuO5CfNgbi8fSm68n-iXATJK24BKHJWOUmIb30jpJ9qJMdj5Wi3YsJyqtMOeXnRR5FUjMfZhgAxYY-LAwreOF4PF88XUWpgubxrcm3EAXMDzlBvUAt1XaQziacV6shj9QPr3z1HFOvQs05b0Wv6EYyGxWzyv03nKU4HB6HCjwg59G0YPpOJJBxONgqQeVsuBB2xZ1QR34l6hQUTrg0XT_1epN-1Mtirf9YJN9gfXKFollHfSIlNWYugU784r8K8-VV8_RSrQpaOXnT9fGYCgb7ZqpcmihrPhtsnLCBSmLy1pGUyzFFzjsg8es1H_bvY9y0UV8K95iSxamV6OKk_Vhulgwqp7u42qu3S3VMVYh0nmA_SzRjDudVaYwu39xQof6tyWWIJMqcSNQP_TUOrTmoTs5LZIOQz4y80XJ0L5rlpfvLmhCuog0TF3yc7eZzkZVfNkaFHse2n9kCScJxwZwhqdYz4u5T84-1r80BLKg3D5OCLKjD7GVWAvqFw-S1w92NBVarhgsGq8yArsnw_yZTKrY57Hr39KjJWqjZ5XydqvLawBzTedDMW1KfOuffe6ZL6u3w_yr03fPC68a-a8VVBJng3MJ9Ii5jnEtpLrFZWDGcLPwJZ7DzswkVUIUineadjbLdeJ2H8BxT-3TeIJr1eSXrPU7m3xIVOhWOZXuuC0ZIKU_FM5Y2hZoNqHoZSuWiqXD7IlwlLwq1tFY88YYAfUnwLyS-ChH-CfvZux6SUX6hl9ri7ZnYmM0DV_zOq9xI8xQXnrF2vvcHTRnme6tO_pkrHyCoyt16Vq_vE9INZTf7YCBYMHZ5cxMY5kD3gFQ50BgOgZt2s0Jdyg2lRJ8q5yhATIr4heZET_l2pWBkPdVdHZnA8xr-6ADhrjIJQ8wg3QnIohoc-KOS2oOhHsQToCj1a2bOgXNXckq23MCmviQ3WX-GQWxpswMyhtAZtSpGggCFWfLtQ5Utkzd3PKPoNaXtdfbLYasnqEqcLvzyLk27r8FNI_-xb5E6dXJje0dqQE7f2L44klmZXkKrqFyGKyd3wwgbrLJjl4m2V-dp3qirwY7J3nnX_dwaRZtEbv8-HM9cKMdGiGHV2WaPtd10yt6N_kh85usDYqWGWda78Qf0uOf0W6lC9DKIgLC5atNQkXkHDuVHFE6CF9Ojiexg=w2048-h2732');
+  min-height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
 }
 
 footer {
@@ -274,35 +345,4 @@ footer {
   opacity: 0.95;
 }
 
-.styled-scrollbars {
-  /* Foreground, Background */
-  scrollbar-color: #c5c8c5 #353535;
-}
-.styled-scrollbars::-webkit-scrollbar {
-  width: 6px; /* Mostly for vertical scrollbars */
-  height: 6px; /* Mostly for horizontal scrollbars */
-}
-.styled-scrollbars::-webkit-scrollbar-thumb {
-  /* Foreground */
-  border-radius: 6px;
-  background: #c5c8c5;
-}
-.styled-scrollbars::-webkit-scrollbar-track {
-  /* Background */
-  background: #353535;
-}
 
-/* Fade-In Effect */
-.visible {
-  /*visibility: visible;*/
-  opacity: 1;
-  transition: opacity 0.9s ease-in-out;
-}
-
-/* Fade-Out Effect */
-.hidden {
-  /*visibility: hidden;*/
-  opacity: 0;
-  /*transition: visibility 0s 2s, opacity 0.9s ease-in-out;*/
-  transition: opacity 0.9s ease-in-out;
-}
